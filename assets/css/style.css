@@ -1,0 +1,124 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro|ZCOOL+QingKe+HuangYou');
+/* General */
+.profileSection a{
+    /* text-decoration: none !important; */
+    color:#cfac5d !important;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: url(../images/pattern.png) repeat
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+}
+.pointer{
+    cursor: pointer;
+}
+/* Slider */
+@media only screen and (max-width: 600px) {
+    .carousel-inner img{
+        min-height: 650px !important;
+        max-height:  650px !important;
+    }
+    .carousel-caption {
+        top: 20%;
+        bottom: auto;
+    }
+} 
+@media only screen and (min-width: 600px) {
+    .carousel-inner img{
+        min-height: 560px !important;
+        max-height:  560px !important;
+    }
+    .carousel-caption {
+        top: 30%;
+        bottom: auto;
+    }
+} 
+
+/* Slider Effect */
+@-webkit-keyframes zoom {
+    from {
+      -webkit-transform: scale(1, 1);
+    }
+    to {
+      -webkit-transform: scale(1.2, 1.2);
+    }
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(1, 1);
+    }
+    to {
+      transform: scale(1.2, 1.2);
+    }
+  }
+  
+  .carousel-inner .active img{
+-webkit-animation: zoom 20s infinite !important;
+animation: zoom 20s infinite !important;
+}
+/* End Slider */
+
+/* Profile */
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+display: block;
+line-height: 1.428571429;
+color: #999;
+}
+@media only screen and (min-width: 600px) {
+    .profileSection{
+        padding : 30px;
+    }
+    .col-xs-12 img{
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .col-xs-12{
+        padding-top:30px;
+        padding-bottom : 30px;
+    }
+    .col-xs-12 img{
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Quotes Section */
+.padding-medium{
+    padding: 5% 10%;
+}
+.backgroundQuote{
+    background: url(../images/quotes.jpg);
+    color:white;
+        letter-spacing: .2em;
+}
+.quotesDesc{
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+
+}
+.quotesName{
+    font-size: 36px;
+    font-family: 'Roboto', sans-serif;
+}
+/* End Quotes Section */
+
+/* portfolioSection */
+.portfolioSection{
+    padding : 30px;
+}
+/* End portfolioSection */
+
+/* Quotes Programmer Secton */
+ .quotesSection .col-md-4{
+     padding:30px !important;
+ }
+/* End Quotes programmer */
